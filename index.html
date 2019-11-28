@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mon projet onepage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header>
+          <div id="entete">
+              <img src="images/huella1.png">
+              <h1>Traces</h1>
+              <h2>d'animal</h2>
+          </div>
+      </header>
+      <main id="container">
+        <div class="ordre">
+          <section class="cambiacolor">
+            <h2>Comment reconnaître et identifier les traces d’animaux dans la nature?</h2>
+            <p>Vous voulez savoir quel genre d’animaux sauvages marche sur votre sentier de randonnée préféré ? La réponse est juste devant vous. Apprenez à reconnaître les traces d’animaux et vous pourrez le constater par vous-même.
+                La rencontre d’un ours en quête de nourriture durant une excursion aux Etats-Unis ou d’un cerf en pleine marche tranquille dans la forêt est terriblement excitant. Mais ce plaisir se mérite. Apprenez à reconnaître les traces d’animaux, cependant, et tout d’un coup, le paradigme change.</p>
+          </section>  
+          <section class="galerie">
+              <h2>Les animaux plus recherchés</h2>
+              <div class="miniPhotos">
+                <img src="images/photo1.jpg" alt="photo1"/>
+                <img src="images/photo2.jpg" alt="photo2"/>
+                <img src="images/photo3.jpg" alt="photo3"/>
+                <img src="images/photo4.jpg" alt="photo4"/>
+                <img src="images/photo5.jpg" alt="photo5"/>
+                <img src="images/photo6.jpg" alt="photo6"/>
+              </div>
+              <div class="grandPhoto">
+                  <img src="images/photo1.jpg" alt="photo1"/>
+              </div>
+          </section>
+        </div>
+        <div class="ordre2">
+          <section class="cambiacolor">
+              <h2>Où chercher des traces d’animaux?</h2>
+              <p>Cela semble évident, mais la première étape pour identifier une trace d’animal est de la trouver. Certaines surfaces de sentiers vous laissent des impressions boueuses parfaites ; d’autres, comme les routes pavées et les sentiers accidentés, sont presque impossibles à lire.<br>
+                  Si vous débutez, concentrez-vous sur les chemins suivants pour optimiser vos chances de tracer un animal :<br>
+                  - Dans la neige. Les couches minces de neige sont idéales pour voir les empreintes d’animaux plus gros, qui ont tendance à s’enfoncer dans des galeries plus profondes et à masquer leurs traces.<br>
+                  - Dans la boue. Recherchez le long des cours d’eau et sur ou à côté du sentier après les tempêtes de pluie.<br>
+                  - Dans le sable. Le sable fin et humide retient mieux les traces.<br>
+                  - Dans un sol mou, au bord du sentier. La saleté humide retient mieux les empreintes que la terre bien tassée des sentiers usés.</p>
+          </section>
+          <section class="galerie">
+              <h2>Les traces à trouver</h2>
+              <div class="miniPhotos">
+                <img src="images/photoGrand1.jpg" alt="trace ours"/>
+                <img src="images/photoGrand2.jpg" alt="trace vatour"/>
+                <img src="images/photoGrand3.jpg" alt="trace gin"/>
+                <img src="images/photoGrand4.jpg" alt="trace chamois"/>
+                <img src="images/photoGrand5.jpg" alt="trace sanglier"/>
+                <img src="images/photoGrand6.jpg" alt="trace loup"/>
+              </div>
+              <div class="grandPhoto">
+                  <img src="images/photoGrand1.jpg" alt="photoGrand1"/>
+              </div>
+          </section>
+        </div>
+        <div class="ordre">
+          <section class="cambiacolor">
+              <h2>Comment regarder les traces d’animaux?</h2>
+              <p>N’ayez pas peur de vous approcher. Accroupissez-vous près de la piste pour être assez près pour voir des marques de griffes et d’autres impressions subtiles à l’intérieur et autour de la piste. Assurez-vous simplement de ne pas projeter d’ombre sur la piste ou, pire encore, de marcher sur l’une des empreintes.
+                  Les premières fois où je suivais des animaux, je prenais en photo les empreintes. Cela me servait quelques centaines de mètres plus loin pour m’assurer que je suivais toujours le même animal, mais aussi pour mieux apprendre à lire les empreintes. Je gardais sur mon ordinateur un répertoire listant toutes les traces en photos avec le nom de l’animal (quand j’avais pu aller jusqu’à l’animal en suivant ses empreintes).</p>
+          </section>  
+          <section id="baseDonnees">
+              <form>
+                  <h2>Comparer la trace</h2>
+                  <label>
+                      <span>Type d'animal</span>
+                      <select name="typeAnimal">
+                          <option value="mammifère">mammifère</option>
+                          <option value="oiseaux">oiseau</option>
+                          <option value="amphibien">anphibien</option>
+                          <option value="reptil">reptil</option>
+                      </select>
+                  </label>
+                  <label for="taille">Taille de la trace
+                    <input type="text" placeholder="Entrez la taille aprox en cms" name="taille" required >
+                  </label>
+                  <label for="orteille">Il y a des orteilles?</label>
+                  <div  id="orteille">
+                    <span>Oui</span>
+                    <input type="radio" name="orteille" required value="oui">
+                    <span>Non</span>
+                    <input type="radio" name="orteille" required value="non">
+                  </div>
+                  <button type="submit" value="envoyer">CHERCHER</button>
+                  <div id="huella" class="miniPhotos">
+                    <img src="images/traces/trace-bigfoot.jpg" alt="trace de bigfoot">
+                  </div>
+                  <div class="grandPhoto">
+                    <img src="images/traces/trace-bigfoot.jpg" alt="trace de bigfoot"/>
+                  </div>
+              </form>
+              <div id="regla">
+                <img src="images/regla.png">
+              </div>
+            </section>
+          </div>
+          <div class="ordre2">
+          <section class="cambiacolor">
+              <h2>Comment identifier les traces des animaux?</h2>
+              <p>Commencez par vous poser ces questions :<br>
+                  - Quelle est la taille de l’impression ?<br>
+                  - A-t-il été laissé par une patte ou un sabot ?<br>
+                  - Les empreintes sont-elles toutes de la même taille ? <br>
+                  - L’imprimé a-t-il des orteils ? <br>
+                  - Voyez-vous des marques de griffes ? <br>
+                  - Voyez-vous la marque d’un orteil ou d’un pouce opposable ?<br>
+                  - Pouvez-vous identifier un tracé de piste ?</p>
+          </section>
+          <section id="contact">
+            <form>
+                <h2>Formulaire contact</h2>
+                <label for="nom">Nom
+                  <input type="text" placeholder="Entrez votre nom" name="nom" required >
+                </label>
+                <label for="prenom">Prénom
+                  <input type="text" placeholder="Entrez votre prénom" name="prenom" required >
+                </label>
+                <label for="email">E-mail
+                  <input type="email" placeholder="Entrez votre e-mail" name="email" required >
+                </label>
+                <label for="message">Message
+                  <textarea type="text" placeholder="Entrez votre message" name="message" cols="80" rows="5"></textarea>
+                </label>
+                <label for="photo">Envoyez une photo
+                    <input type="file" placeholder="Photo en format jpg" name="photo">
+                </label>
+                <button type="submit" value="envoyer">ENVOYER</button>
+            </form>
+          </section>
+        </div>  
+      </main>
+      <footer>
+        <p>Tous les droits réservés - &copy;2019</p>
+      </footer>
+      <script src="main.js"></script>
+  </body>
+</html>

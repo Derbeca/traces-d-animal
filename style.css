@@ -1,0 +1,305 @@
+/* CSS PORTABLES ET TABLETS */
+html, body {
+    background-image: url(images/huellas.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #e3dac9;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #434343;
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    min-height: 450px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 0;
+    margin: 0;
+    text-align: center;
+}
+header h2 {
+    color: #434343;
+    text-align: center;
+    margin: 0;
+}
+#entete {
+    width: 60%;
+    margin: auto;
+}
+header img {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+button {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(67, 67, 67, 0.7);
+    display: block;
+    margin: 5px auto;
+    border: none;
+    color: gainsboro;
+    cursor: pointer;
+}
+button:hover {
+    background-color: gainsboro;
+    color: darkgrey;
+}
+main section p {
+    font-size: 0.9em;
+    color: gainsboro;
+    margin: 20px;
+    line-height : 25px;
+}
+.cambiacolor {
+    background-color: rgba(67, 67, 67, 0.7);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.galerie {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.galerie h2 {
+    color: #434343;
+}
+.miniPhotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.miniPhotos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.grandPhoto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 1s;
+    opacity: 0;
+    display: block;
+}
+.grandPhoto.montrer {
+    top: -2000;
+    left: 0;
+    z-index: 99;
+    opacity: 1;
+    display: block;
+}
+.grandPhoto img {
+    width: 300px;
+    margin: 100px auto;
+    display: block;
+}
+#baseDonnees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+#baseDonnees h2 {
+    color: #434343;
+    margin-top: 10px;
+}
+#baseDonnees form {
+    width: 60%;
+    max-width: 560px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+}
+#baseDonnees form select, input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+}
+#orteille {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+#orteille input {
+    width: 20px;
+    margin: 10px;
+}
+#orteille span {
+    margin: 20px 0;
+    color: gray;
+    font-size: 14px;
+}
+#regla {
+    width: 25%;
+}
+#baseDonnees img {
+    float: right;
+    height: 15cm;
+}
+#huella {
+    width: 100px;
+    height: 140px;
+    margin: auto;
+}
+#huella img {
+    width: 100%;
+    height: 100%;
+}
+h2 {
+    margin: 30px 20px;
+    color: #fff59b;
+    font-size: 1.5em;
+    text-align: center;
+}
+#contact {
+    width: 100%;
+}
+#contact form {
+    min-height: 550px;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+#contact h2 {
+    color: #434343;
+}
+#contact input {
+    width: 95%;
+    height: 40px;
+    margin: 5px;
+    border: none;
+}
+label {
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
+}
+::placeholder {
+    color: darkgray;
+    padding-left: 3px;
+}
+#contact textarea {
+    width: 94%;
+    border: none;
+    margin: 5px;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: darkgrey;
+}
+footer p {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* CSS GRANDS ÉCRANS */
+@media (min-width: 768px) {
+    #regla {
+        display: none;
+    }
+    #baseDonnees form {
+        max-width: 800px;
+    }
+    h2 {
+        margin: 30px 50px;
+    }
+    main section p {
+        margin: 20px 50px;
+    }
+    header img {
+        width: 30%;
+    }
+}
+@media (min-width: 1024px) {
+    .cambiacolor {
+        width: 50%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .galerie {
+        width: 50%;
+        margin: 0;
+
+        padding: 0;
+    }
+    .miniPhotos img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    main section p {
+        font-size: 1em;
+        line-height : 30px;
+        margin: 20px 60px 10px 60px;
+    }
+    .ordre {
+        display: flex;
+    }
+    .ordre2 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+    }
+    h2 {
+        font-size: 28px;
+        margin: 20px 60px 10px 60px;
+    }
+    #contact {
+        width: 50%;
+    }
+    #contact form {
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+    #baseDonnees {
+        width: 50%;
+    }
+    #baseDonnees form {
+        margin-top: 30px;
+        width: 80%;
+    }
+    #huella {
+        width: 150px;
+        height: 200px;
+    } 
+}
